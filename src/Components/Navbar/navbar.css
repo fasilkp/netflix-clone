@@ -1,0 +1,34 @@
+.navbar{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.432);
+    box-shadow: 0px 44px 36px -27px rgba(0,0,0,0.65) inset;
+    -webkit-box-shadow: 0px 44px 36px -27px rgba(0,0,0,0.65) inset;
+    -moz-box-shadow: 0px 44px 36px -27px rgba(0,0,0,0.65) inset;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.head-part1{
+    flex: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+.navbar a{
+    padding-right: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.head-part2{
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+.navbar a img{
+    height: 25px;
+}
