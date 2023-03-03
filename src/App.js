@@ -2,10 +2,16 @@ import "./App.css";
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Navigate,
+  Routes
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import axios from "axios";
+import { apiBaseUrl } from "./utils/urls";
+
+const instance=axios.create({
+  baseURL: apiBaseUrl
+});
+
 
 function App() {
   return (
