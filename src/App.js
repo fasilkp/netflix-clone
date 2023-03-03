@@ -5,13 +5,14 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<h1>Hai</h1>} />
+          <Route path="/" element={<HomePage/>} />
         </Routes>
       </div>
     </Router>
