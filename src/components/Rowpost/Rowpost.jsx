@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import genre, { imageUrl } from "../../utils/urls";
 import "./rowpost.css";
 
@@ -23,6 +24,7 @@ function Rowpost(props) {
       >
         {movies.map((item) => {
           return (
+            <Link to={"/watch/"+item.id}>
             <div
               className="rowpost-item"
               style={{
@@ -41,6 +43,7 @@ function Rowpost(props) {
                 {item.overview}
               </p>
             </div>
+            </Link>
           );
         })}
       </div>

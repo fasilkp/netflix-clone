@@ -7,10 +7,10 @@ import {
 import HomePage from "./pages/HomePage";
 import axios from "axios";
 import { apiBaseUrl } from "./utils/urls";
+import Watch from "./components/Watch/Watch";
 
-const instance=axios.create({
-  baseURL: apiBaseUrl
-});
+
+axios.defaults.baseURL=apiBaseUrl
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage/>} />
+          <Route path="/watch/:id" element={<Watch/>} />
         </Routes>
       </div>
     </Router>

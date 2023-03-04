@@ -13,3 +13,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+.textWhite{
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}

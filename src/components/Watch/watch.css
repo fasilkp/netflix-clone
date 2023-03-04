@@ -1,0 +1,12 @@
+.novideo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+
+.novideo-container img{
+    max-height: 600px;
+}
