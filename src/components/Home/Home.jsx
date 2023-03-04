@@ -8,8 +8,11 @@ function Home() {
     <>
     <Header/>
     <Banner/>
-    <Rowpost header="Latets" />
-    <Rowpost header="Netflix Originals" small={true} />
+    <Rowpost header="Trending" genre='trending' />
+    <Rowpost header="Netflix Originals" small={true} genre='originals' />
+    <Rowpost header="Action" small={true} genre='action' />
+    <Rowpost header="Comedy" small={true} genre='comedyMovies' />
+    <Rowpost header="Horror" small={true} genre='horrorMovies' />
     </>
   )
 }

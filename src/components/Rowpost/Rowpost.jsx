@@ -1,13 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { imageUrl, originals } from "../../utils/urls";
+import genre, { imageUrl } from "../../utils/urls";
 import "./rowpost.css";
 
 function Rowpost(props) {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      let { data } = await axios.get(originals);
+      let { data } = await axios.get(genre[props.genre]);
       console.log(data);
       setMovies(data.results);
     };
@@ -26,10 +26,20 @@ function Rowpost(props) {
             <div
               className="rowpost-item"
               style={{
-                backgroundImage:
-                  `url(${imageUrl+item.backdrop_path})`,
-              }}>
-              <h4>{item.name}</h4>
+                backgroundImage: `url(${imageUrl + item.backdrop_path})`,
+              }}
+            >
+              <h4>
+                {item.name
+                  ? item.name
+                  : item.original_title
+                  ? item.original_title
+                  : item.original_name}
+              </h4>
+              <hr />
+              <p>
+                {item.overview}
+              </p>
             </div>
           );
         })}

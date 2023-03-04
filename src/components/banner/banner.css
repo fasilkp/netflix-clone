@@ -1,14 +1,13 @@
 .banner {
-  height: 75vh;
+  height: 65vh;
   width: 100%;
-  background-image: url(https://wallpaperaccess.com/full/2725441.jpg);
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  -webkit-box-shadow: inset 0px -85px 121px 75px #121212;
-  -moz-box-shadow: inset 0px -85px 121px 75px #121212;
-  box-shadow: inset 0px -85px 121px 75px #121212;
+  -webkit-box-shadow: inset 0px -159px 300px 162px rgba(18,18,18,1);
+-moz-box-shadow: inset 0px -159px 300px 162px rgba(18,18,18,1);
+box-shadow: inset 0px -159px 300px 162px rgba(18,18,18,1);
 }
 .banner-sec-1 {
   height: 100%; 
@@ -48,9 +47,11 @@
 .banner-sec-1 p {
   max-width: 500px;
   line-height: 25px;
+  font-size: .9rem;
+  opacity: 90%;
 }
 .banner-sec-1 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .banner-sec-1 h4 {
   font-size: 1.3rem;
