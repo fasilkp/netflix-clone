@@ -10,3 +10,9 @@
 .novideo-container img{
     max-height: 600px;
 }
+.novideo-container h3{
+    color: white;
+}
+.description-container{
+    padding-bottom: 50px;
+}

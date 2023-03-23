@@ -15,6 +15,7 @@ import {
   Typography,
 } from "@mui/material";
 import { RiArrowDownSLine } from "react-icons/ri";
+import Rowpost from "../Rowpost/Rowpost";
 
 function Watch() {
   const { id } = useParams();
@@ -88,6 +89,7 @@ function Watch() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+        <Rowpost header="Recommendation" small={true} genre='trending' />
         </div>
       </div>
     </>
